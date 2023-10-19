@@ -1,10 +1,11 @@
+const body = document.querySelector("body");
 const colorBtn = document.querySelector("button");
 const colorSpan = document.querySelector(".color");
 colorBtn.addEventListener("click", colorBody);
 
 function colorBody() {
   const currentColor = getRandomHexColor();
-  colorBtn.parentElement.style.backgroundColor = currentColor;
+  body.style.backgroundColor = currentColor;
   colorSpan.textContent = currentColor;
 }
 
